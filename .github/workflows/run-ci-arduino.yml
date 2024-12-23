@@ -34,6 +34,8 @@ jobs:
           echo "RTCandNTP,Seeeduino:nrf52:xiaonRF52840" >> ignore.list
           echo "RTCandNTP,Seeeduino:nrf52:xiaonRF52840Sense" >> ignore.list
           echo "RTCandNTP,Seeeduino:renesas_uno:XIAO_RA4M1"  >> ignore.list
+          echo "RTCandNTP,rp2040:rp2040:seeed_xiao_rp2040"   >> ignore.list
+          echo "RTCandNTP,rp2040:rp2040:seeed_xiao_rp2350"   >> ignore.list
 
       - name: Build sketch
         run: ./ci/tools/compile.sh
